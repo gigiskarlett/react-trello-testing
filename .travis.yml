@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: jUr+cqe2DWpLUY+DA0snwvPjDnl3e8Nf8Ua6OW0DyL7TL71TwFsl2W4YsF0azGwEV6go06LDBDxsARuNgUmhQf42qa027haRRQFB2I7BIcDDJpZHefQhyAtF4oh7deT9bXLollAcpjC5UYlnYzZmovrsh+Jlz5u6iohiROHeZsiaHxJt2tOl8zW2Zk5841Sj+BLmaS+w9/3v+cSgpXQpKctcBTcAWrEytOJltvZMVg1U2Zgqr9jl/dfM8f06qbtEphihbh02kQaljCTuM48rDS1e1D9pdm1OQxeP002Tqlm15GVAOn+tV0q47ETboO39WRsP6VEkxNo0NxWdjnwr6+HocKuH4NvaaZflISCq8E/TjHgTECxTla5kVfhK+75xkrq1PoasFMfP0X2i9T2P/tfii0W9J3qJOS4S91IW8qDFMjsWTjHHNPHjzH9Lv2yHk8j3OZYmqkl6/wX9B3oKNFLGy8l7JXetJKkOn/d99y6GllA1U8rzbBtZRhErtWyvBY74jKhsyUdI1Hrr5yCRKkyoa3EjaQzfnanxg5f7vUudCqOxflHAKqQLfkkYLdqZGneyb6GV0dD60gAc2WZaZoL+5ZAtAX8uDUo3+FW54vK+6eVUfvgjk5tZ12paUGH6S/cN3lWvZuTmJ9xKD5OHf6iAyi9VWafpdAjnIk1wyjc=
+  app: boiling-thicket-39157
+  on:
+    repo: gigiskarlett/react-trello-testing
